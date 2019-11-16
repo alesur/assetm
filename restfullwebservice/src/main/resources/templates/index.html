@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AssetM</title>
+    <link href="../../components/dummy-assets/common/img/favicon.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <!-- VENDORS -->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/jquery-steps/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlvideoplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlvideoplayer/src/player.css">
+    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../vendors/popper.js/dist/umd/popper.js"></script>
+    <script src="../../vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="../../vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../../vendors/spin.js/spin.js"></script>
+    <script src="../../vendors/ladda/dist/ladda.min.js"></script>
+    <script src="../../vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="../../vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="../../vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="../../vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+    <script src="../../vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="../../vendors/moment/min/moment.min.js"></script>
+    <script src="../../vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../../vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="../../vendors/summernote/dist/summernote.min.js"></script>
+    <script src="../../vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../../vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../../vendors/nestable/jquery.nestable.js"></script>
+    <script src="../../vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+    <script src="../../vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="../../vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="../../vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="../../vendors/d3/d3.min.js"></script>
+    <script src="../../vendors/c3/c3.min.js"></script>
+    <script src="../../vendors/chartist/dist/chartist.min.js"></script>
+    <script src="../../vendors/peity/jquery.peity.min.js"></script>
+    <script src="../../vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="../../vendors/nprogress/nprogress.js"></script>
+    <script src="../../vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="../../vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="../../vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="../../vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="../../vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+    <script src="../../vendors/d3-dsv/dist/d3-dsv.js"></script>
+    <script src="../../vendors/d3-time-format/dist/d3-time-format.js"></script>
+    <script src="../../vendors/techan/dist/techan.min.js"></script>
+
+    <!-- CLEAN UI HTML ADMIN TEMPLATE MODULES-->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../components/core/common/core.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/core/widgets/widgets.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/vendors/common/vendors.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/settings/common/settings.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/settings/themes/themes.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/menu-left/common/menu-left.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/menu-right/common/menu-right.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/top-bar/common/top-bar.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/footer/common/footer.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/pages/common/pages.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/ecommerce/common/ecommerce.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../components/apps/common/apps.cleanui.css">
+    <script src="../../components/menu-left/common/menu-left.cleanui.js"></script>
+    <script src="../../components/menu-right/common/menu-right.cleanui.js"></script>
+</head>
+<body class="config--vertical config--borderLess menu-left--colorful menu-left--shadow">
+<nav class="menu-left">
+    <div class="menu-left__lock menu-left__action--menu-toggle">
+        <div class="menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="menu-left__logo">
+        <a href="dashboards-alpha.html">
+            <img src="../../components/dummy-assets/common/img/logo-inverse.png" alt="" />
+        </a>
+    </div>
+    <div class="menu-left__inner">
+        <ul class="menu-left__list menu-left__list--root">
+            <li class="menu-left__item">
+                <a href="#">
+                    <span class="menu-left__icon icmn-home"></span>
+                    Dashboard
+                </a>
+            </li>
+
+            <li  class="menu-left__item">
+                <a href="#">
+                    <span class="menu-left__icon icmn-stack"></span>
+                    Assets
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<!-- TOP BAR -->
+<div class="top-bar">
+    <!-- left aligned items -->
+    <div class="top-bar__left">
+        <div class="top-bar__logo">
+            <a href="dashboards-alpha.html">
+                <img src="../../components/dummy-assets/common/img/logo.png" alt="" />
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <!-- right aligned items -->
+    <div class="top-bar__right">
+
+        <!-- Top Site block-->
+        <div class="top-bar__item d-none d-md-block">
+            <div class="dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle text-nowrap" data-toggle="dropdown" aria-expanded="false">
+                    <i class="icmn-database mr-2"></i>
+                    <span class="d-none d-xl-inline-block">Current site: <strong>Kiwa</strong></span>
+                </a>
+                <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)">Kiwa</a>
+                    <a class="dropdown-item" href="javascript:void(0)">AMB</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Vokadis</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Clovell</a>
+                </div>
+            </div>
+        </div>
+        <!-- Top Site block End-->
+
+        <div class="top-bar__item">
+            <div class="dropdown top-bar__avatar-dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="d-none d-xl-inline-block">User: <strong>Alex</strong></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">Home</div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> System
+                        Dashboard</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> User Boards</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Issue
+                        Navigator (35 New)</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- right aligned items END-->
+</div>
+<!-- TOP BAR END-->
+
+<div class="utils__content">
+    <!-- asset-list -->
+
+    <!--    Add product Button  -->
+    <div class="card">
+
+        <div class="card-header">
+            <div class="dropdown pull-right">
+                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Add Product
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                    <a class="dropdown-item" href="javascript: void(0)">Simple Product</a>
+                    <a class="dropdown-item" href="javascript: void(0)">Configurable Product</a>
+                    <a class="dropdown-item" href="javascript: void(0)">Grouped Product</a>
+                    <a class="dropdown-item" href="javascript: void(0)">Virtual Product</a>
+                    <a class="dropdown-item" href="javascript: void(0)">Bundle Product</a>
+                    <a class="dropdown-item" href="javascript: void(0)">Downloadable Product</a>
+                </div>
+            </div>
+            <span class="utils__title">
+            <strong>Asset List: Computers</strong>
+        </span>
+        </div>
+        <!--    Add product Button  -->
+
+        <div class="card-body">
+            <table class="table table-hover nowrap" id="example1">
+                <thead class="thead-default">
+                <tr>
+                    <th>Name</th>
+                    <th>OS</th>
+                    <th>Last user</th>
+                    <th>Last IP</th>
+                    <th>Description</th>
+                    <th>Manufacturer</th>
+                    <th>Model</th>
+                    <th>Last active</th>
+                    <th>Inventory</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040001</a></td>
+                    <td>Windows 10 Pro </td>
+                    <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
+                    <td>10.150.0.100</td>
+                    <td>Some PC</td>
+                    <td>Lenovo</td>
+                    <td>ThinkPad X1 Carbon</td>
+                    <td>Nov 15, 2019 1:31 PM</td>
+                    <td>IT-3567</td>
+                    <td>Vilnius</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040002</a></td>
+                    <td>Windows 10 Pro </td>
+                    <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
+                    <td>10.150.0.100</td>
+                    <td>Some PC</td>
+                    <td>Lenovo</td>
+                    <td>ThinkPad X1 Carbon</td>
+                    <td>Nov 15, 2019 1:31 PM</td>
+                    <td>IT-3567</td>
+                    <td>Vilnius</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040003</a></td>
+                    <td>Windows 10 Pro </td>
+                    <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
+                    <td>10.150.0.100</td>
+                    <td>Some PC</td>
+                    <td>Lenovo</td>
+                    <td>ThinkPad X1 Carbon</td>
+                    <td>Nov 15, 2019 1:31 PM</td>
+                    <td>IT-3567</td>
+                    <td>Vilnius</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>OS</th>
+                    <th>Last user</th>
+                    <th>Last IP</th>
+                    <th>Description</th>
+                    <th>Manufacturer</th>
+                    <th>Model</th>
+                    <th>Last active</th>
+                    <th>Inventory</th>
+                    <th>Location</th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!-- END: ecommerce/products-list -->
+
+    <!-- START: page scripts -->
+    <script>
+        (function($) {
+            "use strict";
+            $(function () {
+
+                // Datatables
+                $('#example1').DataTable({
+                    "lengthMenu": [[50, 100, 200, -1], [50, 100, 200, "All"]],
+                    responsive: true,
+                    "autoWidth": false
+                });
+
+            })
+        })(jQuery)
+    </script>
+    <!-- END: page scripts -->
+</div>
+</body>
+</html>

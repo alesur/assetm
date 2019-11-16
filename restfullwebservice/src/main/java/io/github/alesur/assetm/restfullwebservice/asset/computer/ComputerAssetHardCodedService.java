@@ -20,6 +20,7 @@ public class ComputerAssetHardCodedService {
     }
 
     public List<ComputerAsset> findAll(){
+
         return assets;
     }
 }
