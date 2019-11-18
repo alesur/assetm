@@ -1,6 +1,5 @@
-package io.github.alesur.assetm.restfullwebservice.asset.computer;
+package io.github.alesur.assetm.restfullwebservice.asset.computer.demo;
 
-import io.github.alesur.assetm.restfullwebservice.asset.computer.ComputerAsset;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

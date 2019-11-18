@@ -1,4 +1,4 @@
-package io.github.alesur.assetm.restfullwebservice.asset.computer;
+package io.github.alesur.assetm.restfullwebservice.asset.computer.demo;
 
 public class ComputerAsset {
 
