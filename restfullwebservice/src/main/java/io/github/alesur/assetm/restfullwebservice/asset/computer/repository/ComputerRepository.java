@@ -1,4 +1,4 @@
-package io.github.alesur.assetm.restfullwebservice.asset.computer;
+package io.github.alesur.assetm.restfullwebservice.asset.computer.repository;
 
 
 import io.github.alesur.assetm.restfullwebservice.asset.computer.model.Computer;

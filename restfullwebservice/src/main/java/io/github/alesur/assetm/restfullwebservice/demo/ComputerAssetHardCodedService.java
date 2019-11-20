@@ -1,4 +1,4 @@
-package io.github.alesur.assetm.restfullwebservice.asset.computer.demo;
+package io.github.alesur.assetm.restfullwebservice.demo;
 
 import org.springframework.stereotype.Service;
 

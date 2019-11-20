@@ -1,4 +1,4 @@
-package io.github.alesur.assetm.restfullwebservice.asset.computer.demo;
+package io.github.alesur.assetm.restfullwebservice.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
