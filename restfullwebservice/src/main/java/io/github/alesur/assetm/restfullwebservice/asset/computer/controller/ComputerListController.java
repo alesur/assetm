@@ -1,6 +1,7 @@
 package io.github.alesur.assetm.restfullwebservice.asset.computer.controller;
 
 import io.github.alesur.assetm.restfullwebservice.asset.computer.repository.ComputerRepository;
+import io.github.alesur.assetm.restfullwebservice.site.repository.SiteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,9 @@ public class ComputerListController {
 
     @Autowired
     private ComputerRepository computerRepository;
+
+    @Autowired
+    private SiteRepository siteRepository;
 
     @GetMapping(value = "/manage/site/{site}/computers")
     public String computersList(
