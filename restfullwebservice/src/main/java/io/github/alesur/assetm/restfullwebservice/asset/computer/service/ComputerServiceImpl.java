@@ -18,23 +18,22 @@ public class ComputerServiceImpl implements ComputerService {
     @Autowired
     private DataSource dataSource;
 
-
-    public List atriskdogs(long id){
+    public List computerassets(long id){
         String sql = "SELECT * FROM computer";
-        List dogList = new ArrayList();
+        List<String> computerList = new ArrayList<>();
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.query(sql, new ResultSetExtractor() {
                     public List extractData(ResultSet rs) throws SQLException {
 
                         while (rs.next()) {
                             String name = rs.getString("name");
-                            dogList.add(name);
+                            computerList.add(name);
                         }
-                        return dogList;
+                        return computerList;
                     }
                 }
         );
-        return dogList;
+        return computerList;
     }
 
 }

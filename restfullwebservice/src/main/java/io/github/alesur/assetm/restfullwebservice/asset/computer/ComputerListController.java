@@ -17,22 +17,14 @@ import java.util.List;
 public class ComputerListController {
 
     @Autowired
-    private ComputerRepository dogrepository;
-
-    @Autowired
-    private ComputerService dogservice;
-
-    private ArrayList dogModelList;
-
-    private List dogrisklist = null;
+    private ComputerRepository computerRepository;
 
     @GetMapping(value = "/manage/site/{site}/computers")
-    public String doghome(
+    public String computersList(
             @RequestParam(value = "search", required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") Date q,
             Model model) {
-        model.addAttribute("search", dogModelList);
 
-        model.addAttribute("dogs", dogrepository.findAll());
+        model.addAttribute("computers", computerRepository.findAll());
 
         return "computer-list.html";
 

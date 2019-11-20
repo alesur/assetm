@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface ComputerService {
 
-    List atriskdogs(long id);
+    List computerassets(long id);
 
 
 }

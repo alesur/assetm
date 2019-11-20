@@ -12,68 +12,22 @@
             <th>Last active</th>
             <th>Inventory</th>
             <th>Location</th>
+            <th>Owner</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040001</a></td>
-            <td>Windows 10 Pro </td>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
-            <td>10.150.0.100</td>
-            <td>Some PC</td>
-            <td>Lenovo</td>
-            <td>ThinkPad X1 Carbon</td>
-            <td>Nov 15, 2019 1:31 PM</td>
-            <td>IT-3567</td>
-            <td>Vilnius</td>
-        </tr>
-        <tr>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040002</a></td>
-            <td>Windows 10 Pro </td>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
-            <td>10.150.0.100</td>
-            <td>Some PC</td>
-            <td>Lenovo</td>
-            <td>ThinkPad X1 Carbon</td>
-            <td>Nov 15, 2019 1:31 PM</td>
-            <td>IT-3567</td>
-            <td>Vilnius</td>
-        </tr>
-        <tr>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040003</a></td>
-            <td>Windows 10 Pro </td>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
-            <td>10.150.0.100</td>
-            <td>Some PC</td>
-            <td>Lenovo</td>
-            <td>ThinkPad X1 Carbon</td>
-            <td>Nov 15, 2019 1:31 PM</td>
-            <td>IT-3567</td>
-            <td>Vilnius</td>
-        </tr>
-        <tr>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">LT-WL19040003</a></td>
-            <td>Windows 10 Pro </td>
-            <td><a href="javascript: void(0);" class="utils__link--underlined">v.pavardenis</a></td>
-            <td>10.150.0.100</td>
-            <td>Some PC</td>
-            <td>Lenovo</td>
-            <td>ThinkPad X1 Carbon</td>
-            <td>Nov 15, 2019 1:31 PM</td>
-            <td>IT-3567</td>
-            <td>Vilnius</td>
-        </tr>
-        <tr th:each="dogs : ${dogs}">
-            <td><a href="javascript: void(0);" class="utils__link--underlined" th:text="${dogs.name}">ComputerName</a></td>
-            <td th:text="${dogs.os}">OS-Version</td>
-            <td><a href="javascript: void(0);" class="utils__link--underlined" th:text="${dogs.lastUser}">LastUserName</a></td>
-            <td>10.150.0.100</td>
-            <td>Some PC</td>
-            <td>Lenovo</td>
-            <td>ThinkPad X1 Carbon</td>
-            <td>Nov 15, 2019 1:31 PM</td>
-            <td>IT-3567</td>
-            <td>Vilnius</td>
+        <tr th:each="computers : ${computers}">
+            <td><a href="javascript: void(0);" class="utils__link--underlined" th:text="${computers.name}">ComputerName</a></td>
+            <td th:text="${computers.os}">OS-Version</td>
+            <td><a href="javascript: void(0);" class="utils__link--underlined" th:text="${computers.lastUser}">LastUserName</a></td>
+            <td th:text="${computers.lastIp}">LastIP</td>
+            <td th:text="${computers.description}">Description</td>
+            <td th:text="${computers.manufacturer}">Manufacturer</td>
+            <td th:text="${computers.model}">Model</td>
+            <td th:text="${computers.lastActive}">Date</td>
+            <td th:text="${computers.inventory}">Inventory7</td>
+            <td th:text="${computers.location}">Location</td>
+            <td th:text="${computers.owner}">Owner</td>
         </tr>
         </tbody>
         <tfoot>
@@ -88,6 +42,7 @@
             <th>Last active</th>
             <th>Inventory</th>
             <th>Location</th>
+            <th>Owner</th>
         </tr>
 
         </tfoot>
