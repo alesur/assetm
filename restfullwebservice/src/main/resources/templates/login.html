@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-th-replace="/fragments/headerElements.html"></head>
+
+<body class="config--vertical config--borderLess menu-left--colorful menu-left--shadow">
+<nav data-th-replace="/fragments/side-menu/sideNavigation.html"></nav>
+
+<div data-th-replace="/fragments/top-menu/navigation.html"></div>
+
+<div class="utils__content">
+<!-- START: pages/login-alpha -->
+<div class="ogin login--fullscreen" style="background-image: url(../../components/pages/common/img/login/2.jpg)">
+    <div class="login__header">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="login__header__logo">
+                    <a href="javascript: history.back();">
+                        <img src="../../components/pages/common/img/logo-inverse.png" alt="Clean UI Admin Template" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login__block">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="login__block__inner">
+                    <div class="login__block__form">
+                        <h4 class="text-uppercase">
+                            <strong>Please log in</strong>
+                        </h4>
+                        <br />
+                        <form id="form-validation" name="form-validation" method="POST">
+                            <div class="form-group">
+                                <label class="form-label">Username</label>
+                                <input id="validation-email"
+                                       class="form-control"
+                                       placeholder="Email or Username"
+                                       name="validation[email]"
+                                       type="text"
+                                       data-validation="[EMAIL]">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input id="validation-password"
+                                       class="form-control password"
+                                       name="validation[password]"
+                                       type="password" data-validation="[L>=6]"
+                                       data-validation-message="$ must be at least 6 characters"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="javascript: void(0);" class="pull-right utils__link--blue utils__link--underlined">Forgot Password?</a>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="example6" checked>
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary mr-3">Sign In</button>
+                                <span class="register-link">
+                                    <a href="" class="utils__link--blue utils__link--underlined">Register</a> if you don't have account
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END: pages/login-alpha -->
+
+<!-- START: page scripts -->
+<script>
+    (function($) {
+        "use strict";
+        $(function () {
+
+            // Form Validation
+            $('#form-validation').validate({
+                submit: {
+                    settings: {
+                        inputContainer: '.form-group',
+                        errorListClass: 'form-control-error',
+                        errorClass: 'has-danger'
+                    }
+                }
+            });
+
+            // Show/Hide Password
+            $('.password').password({
+                eyeClass: '',
+                eyeOpenClass: 'icmn-eye',
+                eyeCloseClass: 'icmn-eye-blocked'
+            });
+
+            // Switch to fullscreen
+            $('.switch-to-fullscreen').on('click', function () {
+                $('.login').toggleClass('login--fullscreen');
+            })
+        });
+    })(jQuery)
+</script>
+</div>
+</div>
+</body>
+</html>
