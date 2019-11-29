@@ -3,12 +3,8 @@
 <head data-th-replace="/fragments/headerElements.html"></head>
 
 <body class="config--vertical config--borderLess menu-left--colorful menu-left--shadow">
-<nav data-th-replace="/fragments/side-menu/sideNavigation.html"></nav>
-
-<div data-th-replace="/fragments/top-menu/navigation.html"></div>
-
 <div class="utils__content">
-<!-- START: pages/login-alpha -->
+<!-- START: login Page -->
 <div class="ogin login--fullscreen" style="background-image: url(../../components/pages/common/img/login/2.jpg)">
     <div class="login__header">
         <div class="row">
@@ -30,13 +26,13 @@
                             <strong>Please log in</strong>
                         </h4>
                         <br />
-                        <form id="form-validation" name="form-validation" method="POST">
+                        <form id="form-validation" name="form-validation" th:action="@{/authenticateTheUser}" method="POST">
                             <div class="form-group">
                                 <label class="form-label">Username</label>
                                 <input id="validation-email"
                                        class="form-control"
                                        placeholder="Email or Username"
-                                       name="validation[email]"
+                                       name="username"
                                        type="text"
                                        data-validation="[EMAIL]">
                             </div>
@@ -44,7 +40,7 @@
                                 <label class="form-label">Password</label>
                                 <input id="validation-password"
                                        class="form-control password"
-                                       name="validation[password]"
+                                       name="password"
                                        type="password" data-validation="[L>=6]"
                                        data-validation-message="$ must be at least 6 characters"
                                        placeholder="Password">
@@ -71,7 +67,6 @@
         </div>
     </div>
 </div>
-<!-- END: pages/login-alpha -->
 
 <!-- START: page scripts -->
 <script>
@@ -97,10 +92,6 @@
                 eyeCloseClass: 'icmn-eye-blocked'
             });
 
-            // Switch to fullscreen
-            $('.switch-to-fullscreen').on('click', function () {
-                $('.login').toggleClass('login--fullscreen');
-            })
         });
     })(jQuery)
 </script>
