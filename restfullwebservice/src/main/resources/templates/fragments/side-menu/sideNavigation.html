@@ -5,21 +5,21 @@
         </div>
     </div>
     <div class="menu-left__logo">
-        <a href="dashboards-alpha.html">
+        <a th:href="@{'/manage/site/' + ${siteCode} + '/dashboard/'}">
             <img src="/components/dummy-assets/common/img/logo-inverse.png" alt="" />
         </a>
     </div>
     <div class="menu-left__inner">
         <ul class="menu-left__list menu-left__list--root">
             <li class="menu-left__item">
-                <a href="#">
+                <a th:href="@{'/manage/site/' + ${siteCode} + '/dashboard/'}">
                     <span class="menu-left__icon icmn-home"></span>
                     Dashboard
                 </a>
             </li>
 
             <li  class="menu-left__item">
-                <a href="#">
+                <a th:href="@{'/manage/site/' + ${siteCode} + '/computers/'}">
                     <span class="menu-left__icon icmn-stack"></span>
                     Assets
                 </a>

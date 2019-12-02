@@ -1,14 +1,11 @@
 <div class="top-bar__item d-none d-md-block">
     <div class="dropdown">
-        <a href="javascript: void(0);" class="dropdown-toggle text-nowrap" data-toggle="dropdown" aria-expanded="false">
+        <a class="dropdown-toggle text-nowrap" href="" data-toggle="dropdown" aria-expanded="false">
             <i class="icmn-database mr-2"></i>
-            <span class="d-none d-xl-inline-block">Current site: <strong th:text="${niceName}"></strong></span>
+            <span class="d-none d-xl-inline-block">Current site: <strong th:text="${siteName}"></strong></span>
         </a>
         <div class="dropdown-menu" role="menu">
-            <a class="dropdown-item" href="javascript:void(0)">Kiwa</a>
-            <a class="dropdown-item" href="javascript:void(0)">AMB</a>
-            <a class="dropdown-item" href="javascript:void(0)">Vokadis</a>
-            <a class="dropdown-item" href="javascript:void(0)">Clovell</a>
+            <a th:each="site : ${site}" class="dropdown-item" th:href="@{'/manage/site/' + ${site.siteCode} + '/dashboard/'}" th:text="${site.niceName}"></a>
         </div>
     </div>
 </div>

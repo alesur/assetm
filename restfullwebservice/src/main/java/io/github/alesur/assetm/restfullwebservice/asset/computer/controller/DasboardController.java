@@ -2,7 +2,6 @@ package io.github.alesur.assetm.restfullwebservice.asset.computer.controller;
 
 import io.github.alesur.assetm.restfullwebservice.asset.computer.model.ComputerRepository;
 import io.github.alesur.assetm.restfullwebservice.asset.computer.model.SiteRepository;
-import io.github.alesur.assetm.restfullwebservice.asset.computer.model.data.Computer;
 import io.github.alesur.assetm.restfullwebservice.asset.computer.model.data.Site;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,12 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import java.util.List;
-
 @Controller
 @RequestMapping("/manage/site")
-public class ComputerListController {
+public class DasboardController {
 
     @Autowired
     private ComputerRepository computerRepository;
@@ -24,8 +20,8 @@ public class ComputerListController {
     @Autowired
     private SiteRepository siteRepository;
 
-    @GetMapping("/{siteCode}/computers")
-    public String computersListbySite(@PathVariable String siteCode, Model model) {
+    @GetMapping("/{siteCode}/dashboard")
+    public String dashboardView(@PathVariable String siteCode, Model model) {
         Site site = siteRepository.findBySiteCode(siteCode);
         if (site == null) {
             return "redirect:/";
@@ -38,7 +34,6 @@ public class ComputerListController {
         model.addAttribute("siteName", siteName);
         model.addAttribute("siteCode", siteCode);
         model.addAttribute("site", siteRepository.findAll());
-        return "computer-list.html";
+        return "home.html";
     }
-
 }
