@@ -1,4 +1,4 @@
-package io.github.alesur.assetm.restfullwebservice;
+package io.github.alesur.assetm.restfullwebservice.asset.computer.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
